@@ -25,3 +25,9 @@
 ## Reference
 
 [https://www.nodebeginner.org/index-zh-tw.html](https://www.nodebeginner.org/index-zh-tw.html)
+
+[https://blog.hinablue.me/nodejs-first-look](https://blog.hinablue.me/nodejs-first-look)
+
+[http://www.codedata.com.tw/javascript/node-webkit-great-tool-for-gui](http://www.codedata.com.tw/javascript/node-webkit-great-tool-for-gui)
+
+[https://github.com/zcbenz/nw-sample-apps](https://github.com/zcbenz/nw-sample-apps)

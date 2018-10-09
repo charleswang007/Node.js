@@ -38,11 +38,14 @@
 
 '''
 var fs = require("fs");
+
 var callback = function(err, data){
     if(err) return;
     console.log(data.toString());
 }
+
 fs.readFile("foo.txt", callback);
+'''
 
 ## Reference
 

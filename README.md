@@ -36,7 +36,7 @@
 
 ## Examples
 
-'''
+```
 var fs = require("fs");
 
 var callback = function(err, data){
@@ -45,7 +45,7 @@ var callback = function(err, data){
 }
 
 fs.readFile("foo.txt", callback);
-'''
+```
 
 ## Reference
 

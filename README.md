@@ -68,9 +68,11 @@ fs.readFile("foo.txt", callback);
 ## npm vs. Yarn
 
 * What is npm?
+
 npm (short for Node Package Manager), initially released in 2010, is a tremendously popular package manager among JavaScript developers. It is the default package that is automatically installed whenever you install Node.js on your system. It consists of three components: the website to manage various aspects of your npm experience, Command Line Interface (CLI) to interact with npm via the terminal, and registry to access an extensive public database of JavaScript software. 
 
 * What is Yarn?
+
 Yarn, initially released by Facebook in 2016, is another popular package manager for the JavaScript programming language. The intention behind creating Yarn was to address some of the performance and security shortcomings of working with npm (at that time).
 
 ## Reference

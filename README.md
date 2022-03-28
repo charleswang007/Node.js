@@ -22,6 +22,8 @@
 
 * Test Node.js programs that mix synchronous, async, and RESTful server API functionality
 
+* Node.js runs single-threaded, non-blocking, asynchronous programming, which is very memory efficient.
+
 ## Node.js
 
 * Callback (回呼): 一個回呼是指透過函數參數的參數傳遞到其他程式的，某段可執行程式的參考。
@@ -42,6 +44,8 @@
 
 * JavaScript 的事件循環是依靠瀏覽器實現的，而 Node 作為另一種執行時期，事件循環由底層的 libuv 實現。
 
+* WebSocket 可以看作是 HTTP 協定的升級版，它同樣是以 TCP 協定為基礎的應用層協定，主要是為了彌補 HTTP 協定的無持久化和無狀態等缺陷而誕生的。WebSocket 提供了用戶端端和伺服器之間全雙工的通訊機制。
+
 ## MongoDB
 
 * MongoDB 是由 C++ 語言撰寫的，是一個以分散式檔案儲存為基礎的開放原始碼資料庫系統。在高負載的情況下，增加更多的節點，可以確保伺服器效能。
@@ -61,12 +65,20 @@ var callback = function(err, data){
 fs.readFile("foo.txt", callback);
 ```
 
+## npm vs. Yarn
+
+### What is npm?
+npm (short for Node Package Manager), initially released in 2010, is a tremendously popular package manager among JavaScript developers. It is the default package that is automatically installed whenever you install Node.js on your system. It consists of three components: the website to manage various aspects of your npm experience, Command Line Interface (CLI) to interact with npm via the terminal, and registry to access an extensive public database of JavaScript software. 
+
+### What is Yarn?
+Yarn, initially released by Facebook in 2016, is another popular package manager for the JavaScript programming language. The intention behind creating Yarn was to address some of the performance and security shortcomings of working with npm (at that time).
+
 ## Reference
 
 [https://www.nodebeginner.org/index-zh-tw.html](https://www.nodebeginner.org/index-zh-tw.html)
 
 [https://blog.hinablue.me/nodejs-first-look](https://blog.hinablue.me/nodejs-first-look)
 
-[http://www.codedata.com.tw/javascript/node-webkit-great-tool-for-gui](http://www.codedata.com.tw/javascript/node-webkit-great-tool-for-gui)
+[https://www.w3schools.com/nodejs/default.asp](https://www.w3schools.com/nodejs/default.asp)
 
 [https://github.com/zcbenz/nw-sample-apps](https://github.com/zcbenz/nw-sample-apps)

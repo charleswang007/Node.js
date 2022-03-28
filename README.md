@@ -82,3 +82,5 @@ Yarn, initially released by Facebook in 2016, is another popular package manager
 [https://www.w3schools.com/nodejs/default.asp](https://www.w3schools.com/nodejs/default.asp)
 
 [https://github.com/zcbenz/nw-sample-apps](https://github.com/zcbenz/nw-sample-apps)
+
+[https://www.w3schools.com/nodejs/ref_modules.asp](https://www.w3schools.com/nodejs/ref_modules.asp)

@@ -75,6 +75,10 @@ npm (short for Node Package Manager), initially released in 2010, is a tremendou
 
 Yarn, initially released by Facebook in 2016, is another popular package manager for the JavaScript programming language. The intention behind creating Yarn was to address some of the performance and security shortcomings of working with npm (at that time).
 
+## Hello World Firebase Realtime Database in Node
+
+[https://riptutorial.com/firebase/example/22139/hello-world-firebase-realtime-database-in-node](https://riptutorial.com/firebase/example/22139/hello-world-firebase-realtime-database-in-node)
+
 ## Reference
 
 [https://www.nodebeginner.org/index-zh-tw.html](https://www.nodebeginner.org/index-zh-tw.html)

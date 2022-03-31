@@ -79,6 +79,14 @@ Yarn, initially released by Facebook in 2016, is another popular package manager
 
 [https://riptutorial.com/firebase/example/22139/hello-world-firebase-realtime-database-in-node](https://riptutorial.com/firebase/example/22139/hello-world-firebase-realtime-database-in-node)
 
+## REPL
+
+Reference: [https://dev.to/irohitgaur/making-a-cli-app-in-repl-with-persistent-data-using-node-js-4bpo](https://dev.to/irohitgaur/making-a-cli-app-in-repl-with-persistent-data-using-node-js-4bpo)
+
+My Work: [https://replit.com/@charleswang007/CharlesReplTest?v=1](https://replit.com/@charleswang007/CharlesReplTest?v=1)
+
+![REPL](repl.png)
+
 ## Reference
 
 [https://www.nodebeginner.org/index-zh-tw.html](https://www.nodebeginner.org/index-zh-tw.html)

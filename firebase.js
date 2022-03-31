@@ -11,6 +11,7 @@ firebase.initializeApp({
   databaseURL: "https://node-realtime-db-default-rtdb.firebaseio.com/"
 });  //by adding your credentials, you get authorized to read and write from the database
 
+console.log("=== initialized ===");
 
 /**
 * Loading Firebase Database and refering 
@@ -18,6 +19,8 @@ firebase.initializeApp({
 */
 var db = firebase.database();
 var ref = db.ref("/user_data");  //Set the current directory you are working in
+
+console.log("=== variable set ===");
 
 /**
 * Setting Data Object Value
@@ -37,16 +40,20 @@ ref.set([
 }
 ]);
 
+console.log("=== finished setting data ===");
+
 /**
 * Pushing New Value
 * in the Database Object
 */
 ref.push({
     id:22,
-    name:"Jane Doe",
-    email:"jane@doe.com",
-    website:"https://jane.foo.bar"
+    name:"Puppy Wang",
+    email:"puppy@doe.com",
+    website:"https://puppy.foo.bar"
 });
+
+console.log("=== finished pushing data ===");
 
 /**
 * Reading Value from
@@ -56,3 +63,5 @@ ref.once("value", function(snapshot) {
   var data = snapshot.val();   //Data is in JSON format.
   console.log(data);
 });
+
+console.log("=== finished reading data ===");

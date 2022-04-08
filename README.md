@@ -79,6 +79,140 @@ Yarn, initially released by Facebook in 2016, is another popular package manager
 
 [https://riptutorial.com/firebase/example/22139/hello-world-firebase-realtime-database-in-node](https://riptutorial.com/firebase/example/22139/hello-world-firebase-realtime-database-in-node)
 
+## Node.js Async
+
+# JavaScript Callbacks
+
+1. JavaScript functions are executed in the sequence they are called. Not in the sequence they are defined.
+
+2. A callback is a function passed as an argument to another function.
+
+```
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+function myCalculator(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+}
+
+myCalculator(5, 5, myDisplayer);
+```
+
+# Asynchronous JavaScript
+
+1. In the real world, callbacks are most often used with asynchronous functions. A typical example is JavaScript setTimeout().
+
+```
+setTimeout(myFunction, 3000);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "I love You !!";
+}
+```
+
+2. When using the JavaScript function setInterval(), you can specify a callback function to be executed for each interval.
+
+```
+setInterval(myFunction, 1000);
+
+function myFunction() {
+  let d = new Date();
+  document.getElementById("demo").innerHTML=
+  d.getHours() + ":" +
+  d.getMinutes() + ":" +
+  d.getSeconds();
+}
+```
+
+# JavaScript Promises
+
+1. A JavaScript Promise object contains both the producing code and calls to the consuming code.
+
+```
+let myPromise = new Promise(function(myResolve, myReject) {
+// "Producing Code" (May take some time)
+
+  myResolve(); // when successful
+  myReject();  // when error
+});
+
+// "Consuming Code" (Must wait for a fulfilled Promise)
+myPromise.then(
+  function(value) { /* code if successful */ },
+  function(error) { /* code if some error */ }
+);
+```
+
+2. Example using Callback
+
+```
+setTimeout(function() { myFunction("I love You !!!"); }, 3000);
+
+function myFunction(value) {
+  document.getElementById("demo").innerHTML = value;
+}
+```
+
+3. Example using Promise
+
+```
+let myPromise = new Promise(function(myResolve, myReject) {
+  setTimeout(function() { myResolve("I love You !!"); }, 3000);
+});
+
+myPromise.then(function(value) {
+  document.getElementById("demo").innerHTML = value;
+});
+```
+
+# JavaScript Async
+
+1. The keyword async before a function makes the function return a promise
+
+```
+async function myFunction() {
+  return "Hello";
+}
+myFunction().then(
+  function(value) {myDisplayer(value);},
+  function(error) {myDisplayer(error);}
+);
+```
+
+2. The keyword await before a function makes the function wait for a promise:
+
+```
+let value = await promise;
+```
+
+3. The await keyword can only be used inside an async function.
+
+```
+async function myDisplay() {
+  let myPromise = new Promise(function(resolve, reject) {
+    resolve("I love You !!");
+  });
+  document.getElementById("demo").innerHTML = await myPromise;
+}
+
+myDisplay();
+```
+
+4. Waiting for a Timeout
+
+```
+async function myDisplay() {
+  let myPromise = new Promise(function(resolve) {
+    setTimeout(function() {resolve("I love You !!");}, 3000);
+  });
+  document.getElementById("demo").innerHTML = await myPromise;
+}
+
+myDisplay();
+```
+
 ## REPL
 
 Reference: [https://dev.to/irohitgaur/making-a-cli-app-in-repl-with-persistent-data-using-node-js-4bpo](https://dev.to/irohitgaur/making-a-cli-app-in-repl-with-persistent-data-using-node-js-4bpo)
@@ -98,3 +232,5 @@ My Work: [https://replit.com/@charleswang007/CharlesReplTest?v=1](https://replit
 [https://github.com/zcbenz/nw-sample-apps](https://github.com/zcbenz/nw-sample-apps)
 
 [https://www.w3schools.com/nodejs/ref_modules.asp](https://www.w3schools.com/nodejs/ref_modules.asp)
+
+[https://www.w3schools.com/js/js_callback.asp](https://www.w3schools.com/js/js_callback.asp)

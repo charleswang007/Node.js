@@ -221,6 +221,16 @@ My Work: [https://replit.com/@charleswang007/CharlesReplTest?v=1](https://replit
 
 ![REPL](repl.png)
 
+## Socket.io
+
+Socket.IO is a event-driven JavaScript library for real-time web applications. It enables real-time, bi-directional communication between web clients and servers. It has two parts: a client-side library that runs in the browser, and a server-side library for Node.js. Both components have a nearly identical API.
+
+Socket.IO primarily uses the WebSocket protocol with polling as a fallback option, while providing the same interface. Although it can be used as simply a wrapper for WebSockets, it provides many more features, including broadcasting to multiple sockets, storing data associated with each client, and asynchronous I/O.
+
+Socket.IO provides the ability to implement real-time analytics, binary streaming, instant messaging, and document collaboration. Notable users include Microsoft Office, Yammer, and Zendesk.
+
+Socket.IO is not a WebSocket library with fallback options to other real-time protocols. It is a custom real-time transport protocol implementation on top of other real-time protocols. A Socket.IO implementing server cannot connect to a non-Socket.IO WebSocket client. A Socket.IO implementing client cannot talk to a non-Socket.IO WebSocket or Long Polling Comet server. Socket.IO requires using the Socket.IO libraries on both client and server side.
+
 ## Reference
 
 [https://www.nodebeginner.org/index-zh-tw.html](https://www.nodebeginner.org/index-zh-tw.html)
@@ -234,3 +244,9 @@ My Work: [https://replit.com/@charleswang007/CharlesReplTest?v=1](https://replit
 [https://www.w3schools.com/nodejs/ref_modules.asp](https://www.w3schools.com/nodejs/ref_modules.asp)
 
 [https://www.w3schools.com/js/js_callback.asp](https://www.w3schools.com/js/js_callback.asp)
+
+[https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await](https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await)
+
+[https://en.wikipedia.org/wiki/Socket.IO](https://en.wikipedia.org/wiki/Socket.IO)
+
+[https://www.tutorialspoint.com/socket.io/index.htm](https://www.tutorialspoint.com/socket.io/index.htm)

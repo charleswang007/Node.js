@@ -81,7 +81,7 @@ Yarn, initially released by Facebook in 2016, is another popular package manager
 
 ## Node.js Async
 
-# JavaScript Callbacks
+### JavaScript Callbacks
 
 1. JavaScript functions are executed in the sequence they are called. Not in the sequence they are defined.
 
@@ -100,7 +100,7 @@ function myCalculator(num1, num2, myCallback) {
 myCalculator(5, 5, myDisplayer);
 ```
 
-# Asynchronous JavaScript
+### Asynchronous JavaScript
 
 1. In the real world, callbacks are most often used with asynchronous functions. A typical example is JavaScript setTimeout().
 
@@ -126,7 +126,7 @@ function myFunction() {
 }
 ```
 
-# JavaScript Promises
+### JavaScript Promises
 
 1. A JavaScript Promise object contains both the producing code and calls to the consuming code.
 
@@ -167,7 +167,7 @@ myPromise.then(function(value) {
 });
 ```
 
-# JavaScript Async
+### JavaScript Async
 
 1. The keyword async before a function makes the function return a promise
 

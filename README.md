@@ -221,7 +221,7 @@ My Work: [https://replit.com/@charleswang007/CharlesReplTest?v=1](https://replit
 
 ![REPL](repl.png)
 
-## Socket.io
+## Socket.IO - Chat Application
 
 Socket.IO is a event-driven JavaScript library for real-time web applications. It enables real-time, bi-directional communication between web clients and servers. It has two parts: a client-side library that runs in the browser, and a server-side library for Node.js. Both components have a nearly identical API.
 
